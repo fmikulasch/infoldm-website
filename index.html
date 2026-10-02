@@ -3,179 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <title>Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance</title>
+  <meta name="title" content="Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance">
+  <meta name="description" content="Predictive information preserves the signal; latent distribution matching makes it identifiable, even with stochastic dynamics and observation-private nuisance.">
+  <meta name="keywords" content="self-supervised learning, identifiability, stochastic dynamics, nuisance, latent distribution matching, JEPA, VICReg, contrastive learning">
+  <meta name="author" content="Fabian A. Mikulasch, Friedemann Zenke">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
+  <meta property="og:title" content="Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance">
+  <meta property="og:description" content="Predictive information preserves the signal; latent distribution matching makes it identifiable, even with stochastic dynamics and observation-private nuisance.">
+  <meta property="og:image" content="static/images/overview.webp">
+  <meta property="og:image:alt" content="InfoLDM: predicting stochastic observations in latent space">
+  <meta property="article:published_time" content="2026-09-29">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="twitter:title" content="Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance">
+  <meta name="twitter:description" content="Predictive information preserves the signal; latent distribution matching makes it identifiable, even with stochastic dynamics and observation-private nuisance.">
+  <meta name="twitter:image" content="static/images/overview.webp">
+  <meta name="citation_title" content="Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance">
+  <meta name="citation_author" content="Mikulasch, Fabian A.">
+  <meta name="citation_author" content="Zenke, Friedemann">
+  <meta name="citation_publication_date" content="2026/09/29">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2609.37789">
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
+  <script>
+    window.MathJax = {
+      loader: {load: ['[tex]/color']},
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        packages: {'[+]': ['color']}
       },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
+      svg: {fontCache: 'global'}
+    };
   </script>
-  
-  <!-- Website/Organization Structured Data -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance",
+  "description": "Predictive information preserves the signal; latent distribution matching makes it identifiable, even with stochastic dynamics and observation-private nuisance.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Fabian A. Mikulasch",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Friedrich Miescher Institute for Biomedical Research"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Friedemann Zenke",
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Friedrich Miescher Institute for Biomedical Research"
+        },
+        {
+          "@type": "Organization",
+          "name": "University of Basel"
+        }
+      ]
+    }
+  ],
+  "datePublished": "2026-09-29",
+  "url": "https://arxiv.org/abs/2609.37789",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "self-supervised learning",
+    "identifiability",
+    "stochastic dynamics",
+    "nuisance",
+    "latent distribution matching",
+    "JEPA"
+  ]
+}
   </script>
 </head>
 <body>
@@ -186,289 +98,256 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Predictive Self-Supervised Learning Provably Identifies Stochastic Signals under Nuisance</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block">Fabian A. Mikulasch<sup>1</sup>,</span>
+              <span class="author-block">Friedemann Zenke<sup>1,2</sup></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Friedrich Miescher Institute for Biomedical Research, Basel, Switzerland</span><br>
+              <span class="author-block"><sup>2</sup> Faculty of Science, University of Basel, Switzerland</span><br>
+              <span class="publication-venue">arXiv preprint · September 2026</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block"><a href="static/pdfs/2609.37789v1.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span><span>Paper</span></a></span>
+                <span class="link-block"><a href="https://github.com/fmi-basel/identifiable-stochastic-nuisance" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>Code &amp; proofs</span></a></span>
+                <span class="link-block"><a href="https://arxiv.org/abs/2609.37789" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span><span>arXiv</span></a></span>
+              </div>
+            </div>
+            <nav class="paper-sections" aria-label="Paper sections"><a href="#overview">Overview</a><a href="#hopper">Hopper</a><a href="#images">Images</a><a href="#framework">Framework</a></nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+<!-- Overview -->
+<section class="section hero is-light" id="overview">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Learning stochastic signals under nuisance</h2>
+        <div class="content has-text-justified">
+          <p>Predictive self-supervised learning (SSL) learns useful representations by predicting in latent space, but why? We prove <strong>two fundamental principles</strong> of predictive SSL:</p>
+          <ol>
+            <li>Predictive SSL can identify (i.e., recover up to simple transformations) the <strong>true latent variables of the data</strong>, even if these variables have stochastic, nonlinear dynamics.</li>
+            <li>This recovery works even if the data contains <strong>strong, unpredictable nuisance</strong>, which introduces a large amount of prediction-irrelevant information.</li>
+          </ol>
+          <p>The framework that allows for these proofs, <strong>InfoLDM</strong>, separates two complementary principles: <strong>predictive mutual information</strong> determines what information is retained, while <strong>latent distribution matching (LMD)</strong> constrains how it is represented. Together, they can identify a stochastically evolving signal even when observations contain private nuisance.</p>
+        </div>
+        <figure class="paper-figure">
+          <img src="static/images/overview.webp" width="2547" height="1116" alt="InfoLDM maps observations with multiple possible futures into latent space, combining a predictive model with representation entropy.">
+          <figcaption>A predictive model constrains the latent distribution, while entropy keeps representations informative.</figcaption>
+        </figure>
+        <h3 class="title is-4">Connection to the JEPA family</h3>
+        <div class="content has-text-justified">
+          <p>Like joint-embedding predictive architectures (JEPAs), InfoLDM predicts encoded observations without reconstructing the input. In fact, by choosing a specific latent predictive model and entropy estimator we can re-derive popular JEPA approaches:</p>
+          <div class="jepa-methods">
+            <div class="jepa-method">
+              <div class="method-description"><h4>Gaussian model + logdet entropy →&nbsp;VICReg-style</h4><p>Choosing the latent model $p_\theta$ to be a Gaussian with predictor $\mu$ and estimating entropy through the log-determinant of representation covariance $\Sigma$ connects the objective to variance and covariance regularization.</p></div>
+              <details class="formula-derivation">
+              <summary>Equations</summary>
+              <div class="derivation-equations">
+              \[
+                p_\theta(z|z_c) = \frac{1}{Z} \exp (- \|z - \mu(z_c)\|^2 )
+              \]
+              \[
+                H_{q_f}[z] \approx \text{log det}(\Sigma)
+              \]
+              \[
+                \Rightarrow
+              \]
+              \[
+                \mathcal{F} \propto - \left\langle[\|z - \mu(z_c)\|^2\right\rangle_{q_f(z,z_c)} + \text{log det}(\Sigma)
+              \]
+              </div>
+            </details>
+            </div>
+            <div class="jepa-method">
+              <div class="method-description"><h4>von Mises-Fisher model + KDE entropy →&nbsp;SimCLR-style</h4><p>Kernel density estimation connects the objective to contrastive learning, such as SimCLR.</p></div>
+              <details class="formula-derivation">
+              <summary>Equations</summary>
+              <div class="derivation-equations">
+              \[
+                p_\theta(z|z_c) = \frac{1}{Z} \exp ( z^T \mu(z_c) )
+              \]
+              \[
+                H_{q_f}[z] \approx - \sum_i \log \sum_j \exp ( z_j^T z_i )
+              \]
+              \[
+                \Rightarrow
+              \]
+              \[
+                \mathcal{F} \propto \sum_i \log \frac{\exp ( z_i^T \mu({z_c}_i) )}{\sum_j \exp ( z_j^T z_i )}
+              \]
+              </div>
+            </details>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+
+    <p>Before discussing the formal framework and proofs in more detail, let's get an intuitive understanding of the results.</p>
+  </div>
+  </div>
+</section>
+<!-- End overview -->
+
+<!-- Hopper results -->
+<section class="hero is-small" id="hopper">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Identifying nonlinear dynamics under nuisance</h2>
+      <div class="content has-text-justified">
+        <p>We show that InfoLDM allows to find excellent representations and a latent model for nonlinear, action dependent systems. As an example we use the MuJoCo hopper, with the goal to recover physical hopper states (joint angles, positions, ...). To make this task challanging, we add high-dimensional nuisance to the videos.</p>
+      </div>
+      <div class="columns is-mobile is-centered has-text-centered hopper-comparison">
+        <div class="column is-one-third">
+          <figure><img class="hopper-gif" src="static/videos/hopper_no_nuisance.gif" data-poster="static/images/hopper_no_nuisance-poster.webp" width="128" height="128" alt="Clean reference animation of the MuJoCo Hopper moving."><figcaption>Clean hopper environment (only for reference)</figcaption></figure>
+        </div>
+        <div class="column is-one-third">
+          <figure><img class="hopper-gif" src="static/videos/hopper.gif" data-poster="static/images/hopper-poster.webp" width="128" height="128" alt="The Hopper with changing body colors and a multicolored noisy background, as observed by the model."><figcaption>Observations with nuisance</figcaption></figure>
         </div>
       </div>
+      <div class="has-text-centered"><button id="animation-toggle" class="button is-small" type="button" aria-pressed="false" hidden>Pause animations</button></div>
+      <div class="content has-text-justified">
+        <p>InfoLDM receives the corrupted videos as input and learns a latent model. As comparison we also train generative models that reconstruct the input (additionally to latent prediction). Only the non-generative models find meaningful representations.</p>
+      </div>
+      <figure class="paper-figure">
+        <img src="static/images/hopper-umap.webp" width="2236" height="1205" loading="lazy" alt="UMAP projections of physical variables, image data, generative representations, and latent predictive representations, colored by physical state.">
+        <figcaption><strong>Representation geometry.</strong> The latent predictive model recovers structure related to the physical state that is obscured in the observed images. UMAP gives a qualitative view; the readout results quantify recovery.</figcaption>
+      </figure>
+      <div class="content has-text-justified">
+        <p>We can quantify this with linear readout probes.</p>
+      </div>
+      <figure class="paper-figure">
+        <img src="static/images/hopper-bars.webp" width="1786" height="796" loading="lazy" alt="Linear readout R squared for Hopper height, torso orientation, and joint states. Latent predictive representations show high recovery compared with generative and next-observation baselines.">
+        <figcaption><strong>Recovering the physical state.</strong> Linear probes can read out height, torso orientation, and joint states from the learned representations. We also compare with 'next observation' models, which aim to predict the next image.</figcaption>
+      </figure>
+      <div class="content has-text-justified">
+        <p>Because generative models try to predict or encode every detail in the images, which is too challenging, they consistently fail. InfoLDM directly learns the latents dynamics of the nonlinear system and recovers the underlying variables.</p>
+      </div>
+      <!-- <p class="research-note">Hopper’s noise structure dynamics do not exactly satisfy the Gaussian assumptions of the formal theorem. These results demonstrate empirical recovery; nonlinear probes can improve recovery further.</p> -->
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End Hopper results -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
+<!-- Image results -->
+<section class="hero is-small is-light" id="images">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Distinguishing nuisance from signal stochasticity</h2>
+      <div class="content has-text-justified">
+        <p>Recovery under nuisance poses a conundrum: What is considered nuisance and what is only stochasticity in an actually relevant signal, and can the model distinguish those? Our formal results make this precise: Complete unpredictablity → nuisance; predictable signal with added, structured noise → recovered by the algorithm.</p>
+        <p>To show this we construct pairs of images in which selected factors are causally related, with stochastic variation between the two images. The remaining factors vary independently and act as nuisance.</p>
+        <p>In the object-signal setting shown below, <strong>object position, rotation, and hue</strong> are coupled across image pairs. <strong>Lighting and background</strong> are unrelated. The signal is only partly predictable, yet its factors remain accessible to a linear readout.</p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      <figure class="paper-figure image-results">
+        <img src="static/images/image-results.webp" width="1823" height="1564" loading="lazy" alt="Stochastic image pairs with correlated object position, rotation, and color, but uncorrelated lighting and background. Linear probes recover signal factors strongly and nuisance factors weakly.">
+        <figcaption><strong>Stochastic does not mean nuisance.</strong> The model recovers factors participating in the predictive relationship even though their values change stochastically.</figcaption>
+      </figure>
+      <div class="content has-text-justified">
+        <p>Signal is defined by the relationship between observations. In a second setting, we couple the environment factors instead: lighting and background then become the signal to recover.</p>
+        <!-- <p class="research-note">Recovery and nuisance leakage depend on the entropy estimator. The theory guarantees signal recovery under its assumptions; it does not require complete nuisance removal when the representation has spare capacity.</p> -->
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End image results -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- Formal framework -->
+<section class="hero is-small" id="framework">
   <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">InfoLDM: what is conserved, and how</h2>
+      <div class="content has-text-justified">
+        <p>How does  InfoLDM  allow us to prove this recovery under nuisance? Here is a short overview of the formal framework:</p>
+      </div>
+      <figure class="paper-figure">
+        <img src="static/images/model.png" width="2278" height="826" loading="lazy" alt="Graphical model showing context, signal, and nuisance generating observations, with encoders mapping observations and context into a predictive latent model.">
+        <figcaption><strong>Generative and learned models.</strong> Observations combine signal and nuisance; encoders map observations and context into representations connected by a predictive latent model.</figcaption>
+      </figure>
+      <div class="content has-text-justified">
+        <p>In summary, $c$, $s$ and $n$ denote true latent context, signal, and nuisance variables; $z = f(x)$ is the encoded observation, and $z_c = f_c(x_c)$ is the encoded context. In the simulations above the context is the history and actions (hopper), or the related image, but it can be any relevant encoded conditioning variable. The encoders induce a joint distribution $q_f(z,z_c)$, while a learned latent model $p_\theta(z|z_c)$ describes that distribution. InfoLDM maximizes:</p>
+      </div>
+      <div class="framework-equation" role="math" aria-label="F equals predictive mutual information between z and z c, minus KL divergence between the encoded joint distribution and the learned latent model.">
+        \[
+        \begin{aligned}
+          \mathcal{F} &=  \underbrace{- D_{\mathrm{KL}}[q_f(z,z_c)\,\|\,p_\theta(z,z_c)] }_{\text{LDM}} + \underbrace{\vphantom{ D_{\mathrm{KL}}[q_f(z|z_c)\,\|\,p_\theta(z|z_c)] }I_{q_f}[z; z_c]}_{\text{MI}} \\
+          &= \textcolor{#c32d76}{\left\langle \log p_\theta(z,z_c)\right\rangle_{q_f(z,z_c)}} + \textcolor{#625bc0}{H_{q_f}[z]} + \textcolor{#625bc0}{H_{q_f}[z_c]} 
+        \end{aligned}
+        \]
+      </div>
+      <div class="content has-text-justified">
+        <h3 class="title is-4">A familiar training objective</h3>
+        <p>Without loss of guarantees we can set the model context distribution equal to the empirical distribution $p_\theta(z_c)=q_f(z_c)$, which simplifies the objective:</p>
+      </div>
+      <div class="framework-equation" role="math" aria-label="F equals expected log probability of z given z c plus the entropy of z.">
+        \[
+          \mathcal{F} = \textcolor{#c32d76}{\left\langle \log p_\theta(z|z_c)\right\rangle_{q_f(z,z_c)}} + \textcolor{#625bc0}{H_{q_f}[z]} 
+        \]
+      </div>
+      <div class="content has-text-justified">
+        <p>This is a well known lower bound on the mutual information between $z$ and $z_c$, that has been used for representation learning in numerous previous papers.</p>
+      </div>
+      <div class="content has-text-justified">
+        <h3 class="title is-4">Provable identification of the signal variable</h3>
+        <p>We show that maximizing the InfoLDM goal function (both versions above) allows to recover the signal variable. Under the paper’s assumptions and with a Gaussian predictor, the true signal can be recovered from the learned representation by an affine map:</p> 
+      </div>
+      <div class="framework-equation" role="math" aria-label="s equals A z plus b">
+        \[
+          s = Az + b
+        \]
+      </div>
+      <div class="content has-text-justified">
+        <p>More generally, we prove this result for exponential family predictive models, where the recovery guarantee is on the sufficient statistics of the distribution.</p>
+        <details class="framework-assumptions">
+          <summary>Assumptions behind the guarantee</summary>
+          <ol>
+            <li><strong>Private nuisance:</strong> $n \perp\!\!\!\perp c \mid s$ — nuisance adds no context information given the signal.</li>
+            <li><strong>Exponential-family prediction:</strong> $p(s\mid c)$ and $p_\theta(z\mid z_c)$ are exponential-family conditionals with sufficient statistics $\tau_\star(s)$ and $\tau_z(z)$.</li>
+            <li><strong>Ideal optimum:</strong> $D_{\mathrm{KL}}(q_f\|p_\theta)=0$ and $I_{q_f}[z;z_c]=I[s;c]&lt;\infty$ — exact matching and full predictive information.</li>
+            <li><strong>Context variation:</strong> $\operatorname{span}\{\alpha(c)-\alpha(c_0)\}=\mathbb{R}^{r_s}$ — natural parameters vary in every signal-statistic direction.</li>
+            <li><strong>Nondegenerate statistics:</strong> $\tau_\star(s)\mid c$ lies in no proper affine hyperplane — no redundant statistic dimensions.</li>
+          </ol>
+          <p>At the optimum of InfoLDM:</p>
+          <div class="framework-equation" role="math" aria-label="s equals A z plus b">
+            \[
+              \tau_\star(s) = A\tau_z(z) + b
+            \]
           </div>
+        </details>
+      </div>
+      <div class="content has-text-justified">
+        <p>The proof shows that the LDM and MI terms serve two complimentary functions:</p> 
+      </div>
+      <div class="columns content has-text-justified framework-principles">
+        <div class="column">
+          <h3 class="title is-4 info-term">MI: what is retained</h3>
+          <p>Maximizing predictive mutual information preserves the information shared with the context. At saturation, all prediction-relevant signal information is retained.</p>
+          <p>This alone does not identify the representation’s coordinates: invertible nonlinear transformations preserve mutual information.</p>
+        </div>
+        <div class="column">
+          <h3 class="title is-4 ldm-term">LDM: how it is represented</h3>
+          <p>Latent distribution matching constrains the encoded distribution to follow the learned model. These constraints determine how the retained information is represented.</p>
+          <p>We show: For exponential-family predictive distributions, InfoLDM identifies the true signal’s sufficient statistics through an affine readout of the learned statistics.</p>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
+<!-- End formal framework -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -480,17 +359,22 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@misc{mikulasch2026predictive,
+  title={Predictive Self-Supervised Learning Provably Identifies
+         Stochastic Signals under Nuisance},
+  author={Fabian A. Mikulasch and Friedemann Zenke},
+  year={2026},
+  eprint={2609.37789},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2609.37789}
 }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
+
+  </main>
 
   <footer class="footer">
   <div class="container">
@@ -499,8 +383,8 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
