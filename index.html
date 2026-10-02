@@ -117,11 +117,11 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block"><a href="static/pdfs/2609.37789v1.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span><span>Paper</span></a></span>
-                <span class="link-block"><a href="https://github.com/fmi-basel/identifiable-stochastic-nuisance" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>Code &amp; proofs</span></a></span>
+                <span class="link-block"><a href="https://github.com/fmi-basel/identifiable-stochastic-nuisance" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>Code</span></a></span>
                 <span class="link-block"><a href="https://arxiv.org/abs/2609.37789" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span><span>arXiv</span></a></span>
               </div>
             </div>
-            <nav class="paper-sections" aria-label="Paper sections"><a href="#overview">Overview</a><a href="#hopper">Hopper</a><a href="#images">Images</a><a href="#framework">Framework</a></nav>
+            <!-- <nav class="paper-sections" aria-label="Paper sections"><a href="#overview">Overview</a><a href="#hopper">Hopper</a><a href="#images">Images</a><a href="#framework">Framework</a></nav> -->
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@
         </div>
         <figure class="paper-figure">
           <img src="static/images/overview.webp" width="2547" height="1116" alt="InfoLDM maps observations with multiple possible futures into latent space, combining a predictive model with representation entropy.">
-          <figcaption>A predictive model constrains the latent distribution, while entropy keeps representations informative.</figcaption>
+          <figcaption>InfoLDM maximizes the goal function $\mathcal F$: The likelihood of a predictive model constrains the latent distribution, while entropy keeps representations informative.</figcaption>
         </figure>
         <h3 class="title is-4">Connection to the JEPA family</h3>
         <div class="content has-text-justified">
@@ -224,7 +224,7 @@
       </div>
       <figure class="paper-figure">
         <img src="static/images/hopper-umap.webp" width="2236" height="1205" loading="lazy" alt="UMAP projections of physical variables, image data, generative representations, and latent predictive representations, colored by physical state.">
-        <figcaption><strong>Representation geometry.</strong> The latent predictive model recovers structure related to the physical state that is obscured in the observed images. UMAP gives a qualitative view; the readout results quantify recovery.</figcaption>
+        <figcaption><strong>Representation geometry.</strong> The latent predictive model recovers structure related to the physical state that is obscured in the observed images.</figcaption>
       </figure>
       <div class="content has-text-justified">
         <p>We can quantify this with linear readout probes.</p>
@@ -288,7 +288,7 @@
         \end{aligned}
         \]
       </div>
-      <div class="content has-text-justified">
+      <!-- <div class="content has-text-justified">
         <h3 class="title is-4">A familiar training objective</h3>
         <p>Without loss of guarantees we can set the model context distribution equal to the empirical distribution $p_\theta(z_c)=q_f(z_c)$, which simplifies the objective:</p>
       </div>
@@ -299,10 +299,10 @@
       </div>
       <div class="content has-text-justified">
         <p>This is a well known lower bound on the mutual information between $z$ and $z_c$, that has been used for representation learning in numerous previous papers.</p>
-      </div>
+      </div> -->
       <div class="content has-text-justified">
         <h3 class="title is-4">Provable identification of the signal variable</h3>
-        <p>We show that maximizing the InfoLDM goal function (both versions above) allows to recover the signal variable. Under the paper’s assumptions and with a Gaussian predictor, the true signal can be recovered from the learned representation by an affine map:</p> 
+        <p>We show that maximizing the InfoLDM goal function allows to recover the signal variable. Under the paper’s assumptions and with a Gaussian predictor, the true signal can be recovered from the learned representation by an affine map:</p> 
       </div>
       <div class="framework-equation" role="math" aria-label="s equals A z plus b">
         \[
