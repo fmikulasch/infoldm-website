@@ -137,13 +137,13 @@
         <div class="content has-text-justified">
           <p>Predictive self-supervised learning (SSL) learns useful representations by predicting in latent space, but why? We prove <strong>two fundamental principles</strong> of predictive SSL:</p>
           <ol>
-            <li>Predictive SSL can identify (i.e., recover up to simple transformations) the <strong>true latent variables of the data</strong>, even if these variables have stochastic, nonlinear dynamics.</li>
-            <li>This recovery works even if the data contains <strong>strong, unpredictable nuisance</strong>, which introduces a large amount of prediction-irrelevant information.</li>
+            <li>Predictive SSL can recover the <strong>true latent variables of the data</strong>, even if these variables have <strong>stochastic, nonlinear dynamics</strong>.</li>
+            <li>This recovery works even if the data contains <strong>strong, unpredictable nuisance</strong></li>
           </ol>
           <p>The framework that allows for these proofs, <strong>InfoLDM</strong>, is a generalization of existing SSL approaches.</p>
         </div>
         <figure class="paper-figure">
-          <img src="static/images/overview.webp" width="2547" height="1116" alt="InfoLDM maps observations with multiple possible futures into latent space, combining a predictive model with representation entropy.">
+          <img src="static/images/overview.webp" style="max-width: 300px; margin-inline: auto;" alt="InfoLDM maps observations with multiple possible futures into latent space, combining a predictive model with representation entropy.">
           <figcaption>InfoLDM maximizes the goal function $\mathcal F$: The likelihood of a predictive model constrains the latent distribution, while entropy keeps representations informative.</figcaption>
         </figure>
         <div class="content has-text-justified">
