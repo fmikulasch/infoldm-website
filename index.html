@@ -140,21 +140,20 @@
             <li>Predictive SSL can identify (i.e., recover up to simple transformations) the <strong>true latent variables of the data</strong>, even if these variables have stochastic, nonlinear dynamics.</li>
             <li>This recovery works even if the data contains <strong>strong, unpredictable nuisance</strong>, which introduces a large amount of prediction-irrelevant information.</li>
           </ol>
-          <p>The framework that allows for these proofs, <strong>InfoLDM</strong>, separates two complementary principles: <strong>predictive mutual information</strong> determines what information is retained, while <strong>latent distribution matching (LMD)</strong> constrains how it is represented. Together, they can identify a stochastically evolving signal even when observations contain private nuisance.</p>
+          <p>The framework that allows for these proofs, <strong>InfoLDM</strong>, is a generalization of existing SSL approaches.</p>
         </div>
         <figure class="paper-figure">
           <img src="static/images/overview.webp" width="2547" height="1116" alt="InfoLDM maps observations with multiple possible futures into latent space, combining a predictive model with representation entropy.">
           <figcaption>InfoLDM maximizes the goal function $\mathcal F$: The likelihood of a predictive model constrains the latent distribution, while entropy keeps representations informative.</figcaption>
         </figure>
-        <h3 class="title is-4">Connection to the JEPA family</h3>
         <div class="content has-text-justified">
           <p>Like joint-embedding predictive architectures (JEPAs), InfoLDM predicts encoded observations without reconstructing the input. In fact, by choosing a specific latent predictive model and entropy estimator we can re-derive popular JEPA approaches:</p>
           <div class="jepa-methods">
             <div class="jepa-method">
-              <div class="method-description"><h4>Gaussian model + logdet entropy →&nbsp;VICReg-style</h4><p>Choosing the latent model $p_\theta$ to be a Gaussian with predictor $\mu$ and estimating entropy through the log-determinant of representation covariance $\Sigma$ connects the objective to variance and covariance regularization.</p></div>
               <details class="formula-derivation">
-              <summary>Equations</summary>
+              <summary>Gaussian model + logdet entropy →&nbsp;VICReg-style</summary>
               <div class="derivation-equations">
+                Choosing the latent model $p_\theta$ to be a Gaussian with predictor $\mu$ and estimating entropy through the log-determinant of representation covariance $\Sigma$ connects the objective to variance and covariance regularization.
               \[
                 p_\theta(z|z_c) = \frac{1}{Z} \exp (- \|z - \mu(z_c)\|^2 )
               \]
@@ -171,10 +170,10 @@
             </details>
             </div>
             <div class="jepa-method">
-              <div class="method-description"><h4>von Mises-Fisher model + KDE entropy →&nbsp;SimCLR-style</h4><p>Kernel density estimation connects the objective to contrastive learning, such as SimCLR.</p></div>
               <details class="formula-derivation">
-              <summary>Equations</summary>
+              <summary>von Mises-Fisher model + KDE entropy →&nbsp;SimCLR-style</summary>
               <div class="derivation-equations">
+                Kernel density estimation connects the objective to contrastive learning, such as SimCLR.
               \[
                 p_\theta(z|z_c) = \frac{1}{Z} \exp ( z^T \mu(z_c) )
               \]
@@ -273,7 +272,7 @@
       </div>
       <figure class="paper-figure">
         <img src="static/images/model.png" width="2278" height="826" loading="lazy" alt="Graphical model showing context, signal, and nuisance generating observations, with encoders mapping observations and context into a predictive latent model.">
-        <figcaption><strong>Generative and learned models.</strong> Observations combine signal and nuisance; encoders map observations and context into representations connected by a predictive latent model.</figcaption>
+        <figcaption><strong>Generative and learned models.</strong> Observations $x$ combine signal and nuisance; encoders map observations and context into representations connected by a predictive latent model.</figcaption>
       </figure>
       <div class="content has-text-justified">
         <p>In summary, $c$, $s$ and $n$ denote true latent context, signal, and nuisance variables; $z = f(x)$ is the encoded observation, and $z_c = f_c(x_c)$ is the encoded context. In the simulations above the context is the history and actions (hopper), or the related image, but it can be any relevant encoded conditioning variable. The encoders induce a joint distribution $q_f(z,z_c)$, while a learned latent model $p_\theta(z|z_c)$ describes that distribution. InfoLDM maximizes:</p>
