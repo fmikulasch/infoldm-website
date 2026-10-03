@@ -236,7 +236,6 @@
       <div class="content has-text-justified">
         <p>Because generative models try to predict or encode every detail in the images, which is too challenging, they consistently fail. InfoLDM directly learns the latents dynamics of the nonlinear system and recovers the underlying variables.</p>
       </div>
-      <!-- <p class="research-note">Hopper’s noise structure dynamics do not exactly satisfy the Gaussian assumptions of the formal theorem. These results demonstrate empirical recovery; nonlinear probes can improve recovery further.</p> -->
     </div>
   </div>
 </section>
@@ -257,8 +256,7 @@
         <figcaption><strong>Stochastic does not mean nuisance.</strong> The model recovers factors participating in the predictive relationship even though their values change stochastically.</figcaption>
       </figure>
       <div class="content has-text-justified">
-        <p>Signal is defined by the relationship between observations. In a second setting, we couple the environment factors instead: lighting and background then become the signal to recover.</p>
-        <!-- <p class="research-note">Recovery and nuisance leakage depend on the entropy estimator. The theory guarantees signal recovery under its assumptions; it does not require complete nuisance removal when the representation has spare capacity.</p> -->
+        <p>Signal is defined by the relationship between observations. In a second setting, we couple the environment factors instead of object factors, and InfoLDM recovers the former but not the latter.</p>
       </div>
     </div>
   </div>
@@ -288,18 +286,6 @@
         \end{aligned}
         \]
       </div>
-      <!-- <div class="content has-text-justified">
-        <h3 class="title is-4">A familiar training objective</h3>
-        <p>Without loss of guarantees we can set the model context distribution equal to the empirical distribution $p_\theta(z_c)=q_f(z_c)$, which simplifies the objective:</p>
-      </div>
-      <div class="framework-equation" role="math" aria-label="F equals expected log probability of z given z c plus the entropy of z.">
-        \[
-          \mathcal{F} = \textcolor{#c32d76}{\left\langle \log p_\theta(z|z_c)\right\rangle_{q_f(z,z_c)}} + \textcolor{#625bc0}{H_{q_f}[z]} 
-        \]
-      </div>
-      <div class="content has-text-justified">
-        <p>This is a well known lower bound on the mutual information between $z$ and $z_c$, that has been used for representation learning in numerous previous papers.</p>
-      </div> -->
       <div class="content has-text-justified">
         <h3 class="title is-4">Provable identification of the signal variable</h3>
         <p>We show that maximizing the InfoLDM goal function allows to recover the signal variable. Under the paper’s assumptions and with a Gaussian predictor, the true signal can be recovered from the learned representation by an affine map:</p> 
