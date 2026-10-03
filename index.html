@@ -133,14 +133,14 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3">Learning stochastic signals under nuisance</h2>
+        <h2 class="title is-3">A general framework for world model learning</h2>
         <div class="content has-text-justified">
           <p>Predictive self-supervised learning (SSL) learns useful representations by predicting in latent space, but why? We prove <strong>two fundamental principles</strong> of predictive SSL:</p>
           <ol>
             <li>Predictive SSL can recover the <strong>true latent variables of the data</strong>, even if these variables have <strong>stochastic, nonlinear dynamics</strong>.</li>
             <li>This recovery works even if the data contains <strong>strong, unpredictable nuisance</strong></li>
           </ol>
-          <p>The framework that allows for these proofs, <strong>InfoLDM</strong>, is a generalization of existing SSL approaches.</p>
+          <p>The framework that allows for these proofs, which we term <strong>InfoLDM</strong>, is a generalization of existing SSL approaches.</p>
         </div>
         <figure class="paper-figure">
           <img src="static/images/overview.webp" style="max-width: 300px; margin-inline: auto;" alt="InfoLDM maps observations with multiple possible futures into latent space, combining a predictive model with representation entropy.">
@@ -173,7 +173,7 @@
               <details class="formula-derivation">
               <summary>von Mises-Fisher model + KDE entropy →&nbsp;SimCLR-style</summary>
               <div class="derivation-equations">
-                Kernel density estimation connects the objective to contrastive learning, such as SimCLR.
+                Kernel density entropy estimation connects the objective to contrastive learning, such as SimCLR.
               \[
                 p_\theta(z|z_c) = \frac{1}{Z} \exp ( z^T \mu(z_c) )
               \]
@@ -266,7 +266,7 @@
 <section class="hero is-small" id="framework">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">InfoLDM: what is conserved, and how</h2>
+      <h2 class="title is-3 has-text-centered">InfoLDM: what is recovered, and how</h2>
       <div class="content has-text-justified">
         <p>How does  InfoLDM  allow us to prove this recovery under nuisance? Here is a short overview of the formal framework:</p>
       </div>
