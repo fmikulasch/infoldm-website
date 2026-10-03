@@ -250,7 +250,7 @@
       <div class="content has-text-justified">
         <p>Recovery under nuisance poses a conundrum: What is considered nuisance and what is only stochasticity in an actually relevant signal, and can the model distinguish those? Our formal results make this precise: Complete unpredictablity → nuisance; predictable signal with added, structured noise → recovered by the algorithm.</p>
         <p>To show this we construct pairs of images in which selected factors are causally related, with stochastic variation between the two images. The remaining factors vary independently and act as nuisance.</p>
-        <p>In the object-signal setting shown below, <strong>object position, rotation, and hue</strong> are coupled across image pairs. <strong>Lighting and background</strong> are unrelated. The signal is only partly predictable, yet its factors remain accessible to a linear readout.</p>
+        <p>In the object-signal setting shown below, <strong>object position, rotation, and hue</strong> are coupled across image pairs. <strong>Lighting and background</strong> are unrelated. InfoLDM recovers the object (signal) variables such that they can be linearly read out from the representation, while background (nuisance) variables are ignored.</p>
       </div>
       <figure class="paper-figure image-results">
         <img src="static/images/image-results.webp" width="1823" height="1564" loading="lazy" alt="Stochastic image pairs with correlated object position, rotation, and color, but uncorrelated lighting and background. Linear probes recover signal factors strongly and nuisance factors weakly.">
