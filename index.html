@@ -278,21 +278,25 @@
         <p>In summary, $c$, $s$ and $n$ denote true latent context, signal, and nuisance variables; $z = f(x)$ is the encoded observation, and $z_c = f_c(x_c)$ is the encoded context. In the simulations above the context is the history and actions (hopper), or the related image, but it can be any relevant encoded conditioning variable. The encoders induce a joint distribution $q_f(z,z_c)$, while a learned latent model $p_\theta(z|z_c)$ describes that distribution. InfoLDM maximizes:</p>
       </div>
       <div class="framework-equation" role="math" aria-label="F equals predictive mutual information between z and z c, minus KL divergence between the encoded joint distribution and the learned latent model.">
-        \[
-        \begin{aligned}
+        <div style="font-size: 0.85em;">
+          \[
+          \begin{aligned}
           \mathcal{F} &=  \underbrace{- D_{\mathrm{KL}}[q_f(z,z_c)\,\|\,p_\theta(z,z_c)] }_{\text{LDM}} + \underbrace{\vphantom{ D_{\mathrm{KL}}[q_f(z|z_c)\,\|\,p_\theta(z|z_c)] }I_{q_f}[z; z_c]}_{\text{MI}} \\
           &= \textcolor{#c32d76}{\left\langle \log p_\theta(z,z_c)\right\rangle_{q_f(z,z_c)}} + \textcolor{#625bc0}{H_{q_f}[z]} + \textcolor{#625bc0}{H_{q_f}[z_c]} 
-        \end{aligned}
-        \]
+          \end{aligned}
+          \]
+        </div>
       </div>
       <div class="content has-text-justified">
         <h3 class="title is-4">Provable identification of the signal variable</h3>
         <p>We show that maximizing the InfoLDM goal function allows to recover the signal variable. Under the paper’s assumptions and with a Gaussian predictor, the true signal can be recovered from the learned representation by an affine map:</p> 
       </div>
       <div class="framework-equation" role="math" aria-label="s equals A z plus b">
-        \[
+        <div style="font-size: 0.85em;">
+          \[
           s = Az + b
-        \]
+          \]
+        </div>
       </div>
       <div class="content has-text-justified">
         <p>More generally, we prove this result for exponential family predictive models, where the recovery guarantee is on the sufficient statistics of the distribution.</p>
@@ -307,9 +311,11 @@
           </ol>
           <p>At the optimum of InfoLDM:</p>
           <div class="framework-equation" role="math" aria-label="s equals A z plus b">
-            \[
-              \tau_\star(s) = A\tau_z(z) + b
-            \]
+            <div style="font-size: 0.85em;">
+              \[
+                \tau_\star(s) = A\tau_z(z) + b
+              \]
+            </div>
           </div>
         </details>
       </div>
